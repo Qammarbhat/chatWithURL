@@ -1,6 +1,6 @@
-streamlit
-langchain
-langchain-openai
-beautifulsoup4
-python-dotenv
-chromadb
+streamlit==1.31.1
+langchain==0.1.8
+langchain-openai==0.0.6
+beautifulsoup4==4.12.3
+python-dotenv==1.0.1
+chromadb==0.4.22
