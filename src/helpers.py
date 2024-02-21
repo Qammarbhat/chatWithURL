@@ -56,3 +56,15 @@ def get_convo_rag_chain(retriever_chain):
     return create_retrieval_chain(retriever_chain, stuff_documents_chain)
          
 
+def get_response(user_query, vector_store, chat_history):
+    # Create conversation chain
+    retriever_chain = get_context_retriever_chain(vector_store)
+
+    conversation_rag_chain = get_convo_rag_chain(retriever_chain)
+
+    response = conversation_rag_chain.invoke({
+        "chat_history": chat_history,
+        "input": user_query
+    })
+
+    return response["answer"]
