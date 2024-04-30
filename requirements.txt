@@ -3,4 +3,5 @@ langchain==0.1.8
 langchain-openai==0.0.6
 beautifulsoup4==4.12.3
 python-dotenv==1.0.1
+db-sqlite3==0.0.1
 chromadb==0.4.22
