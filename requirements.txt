@@ -5,3 +5,4 @@ beautifulsoup4==4.12.3
 python-dotenv==1.0.1
 db-sqlite3==0.0.1
 chromadb==0.4.22
+pysqlite3-binary==0.5.2.post3
